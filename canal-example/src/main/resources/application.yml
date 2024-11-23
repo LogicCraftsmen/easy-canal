@@ -1,0 +1,23 @@
+canal:
+  server: 127.0.0.1:11111
+  destination: example
+  username: canal
+  password: canal
+  async: false
+  mode: simple
+  thread-pool:
+    core-pool-size: 10
+    max-pool-size: 20
+    queue-capacity: 60
+    thread-name-prefix: Canal_ThreadPool_
+    keep-alive-seconds: 60
+    refuse-strategy: 2
+
+
+spring:
+  main:
+    allow-circular-references: true
+    allow-bean-definition-overriding: true
+  application:
+    name: canal-example
+

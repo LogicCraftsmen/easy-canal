@@ -1,0 +1,4 @@
+top.javatool.canal.client.spring.boot.autoconfigure.ZookeeperClientAutoConfiguration
+top.javatool.canal.client.spring.boot.autoconfigure.SimpleClientAutoConfiguration
+top.javatool.canal.client.spring.boot.autoconfigure.KafkaClientAutoConfiguration
+top.javatool.canal.client.spring.boot.autoconfigure.ClusterClientAutoConfiguration
