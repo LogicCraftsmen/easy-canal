@@ -9,10 +9,6 @@ import top.javatool.canal.client.handler.RowDataHandler;
 
 import java.util.List;
 
-/**
- * @author yang peng
- * @date 2019/3/2710:52
- */
 public class SyncMessageHandlerImpl extends AbstractMessageHandler {
 
 

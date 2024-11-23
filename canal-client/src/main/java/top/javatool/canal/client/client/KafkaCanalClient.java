@@ -11,11 +11,6 @@ import top.javatool.canal.client.handler.MessageHandler;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author yang peng
- * @date 2019/3/2910:02
- */
-
 public class KafkaCanalClient extends AbstractCanalClient {
 
     private Logger log = LoggerFactory.getLogger(KafkaCanalClient.class);

@@ -19,18 +19,18 @@ java21+
 spring boot 方式
 maven 依赖
 ```xml
-  <dependency>
-      <groupId>top.javatool</groupId>
-      <artifactId>canal-spring-boot-starter</artifactId>
-      <version>1.2.6-RELEASE</version>
-  </dependency>
+        <dependency>
+            <groupId>top.javatool</groupId>
+            <artifactId>canal-spring-boot-starter</artifactId>
+            <version>1.1.7</version>
+        </dependency>
 ```
 java 方式
 ```xml
  <dependency>
        <groupId>top.javatool</groupId>
        <artifactId>canal-client</artifactId>
-       <version>1.2.6-RELEASE</version>
+       <version>1.1.7-RELEASE</version>
  </dependency>
 ```
 配置说明
@@ -48,10 +48,15 @@ java 方式
 |canal.group-id  |kafka groupId 消费者订阅消息时可使用，kafka canal 客户端 |null
 |canal.async |是否是异步消费，异步消费时，消费时异常将导致消息不会回滚，也不保证顺序性 |true
 |canal.partition |kafka partition |null
-
+|thread-pool.core-pool-size | 核心线程数
+|thread-pool.max-pool-size | 最大线程数
+|thread-pool.queue-capacity | 队列数
+|thread-pool.thread-name-prefix | 线程名称
+|thread-pool.keep-alive-seconds | 存活时间
+|thread-pool.refuse-strategy | 拒绝策略 1 - 5
 ### 订阅数据库的增删改操作
 实现EntryHandler<T> 接口，泛型为想要订阅的数据库表的实体对象，
-该接口的方法为 java 8 的 default 方法，方法可以不实现，如果只要监听增加操作，只实现增加方法即可
+该接口的方法为 java 21 的 default 方法，方法可以不实现，如果只要监听增加操作，只实现增加方法即可
 下面以一个t_user表的user实体对象为例,
 默认情况下，将使用实体对象的jpa 注解 @Table中的表名来转换为EntryHandler中的泛型对象，
 ```java

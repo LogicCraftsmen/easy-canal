@@ -9,10 +9,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * @author yang peng
- * @date 2019/3/2713:33
- */
 public class HandlerUtil {
 
 

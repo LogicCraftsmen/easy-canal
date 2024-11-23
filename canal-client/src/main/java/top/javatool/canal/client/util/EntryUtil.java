@@ -12,10 +12,6 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
-/**
- * @author yang peng
- * @date 2019/3/2915:07
- */
 public class EntryUtil {
 
 

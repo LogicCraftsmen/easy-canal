@@ -8,10 +8,6 @@ import top.javatool.canal.client.handler.MessageHandler;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author yang peng
- * @date 2019/3/2619:12
- */
 public class ZookeeperClusterCanalClient extends AbstractCanalClient {
 
 
